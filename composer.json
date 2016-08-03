@@ -1,0 +1,30 @@
+{
+    "name": "funson86/laravel-crud-generator",
+    "license": "MIT",
+    "description": "Laravel Crud Generator",
+    "keywords": [
+        "laravel",
+        "lumen",
+        "crud",
+        "crud generator",
+        "model generator",
+        "laravel crud generator"
+        "lumen crud generator"
+    ],
+    "authors": [
+        {
+            "name": "funson",
+            "email": "funson86@gmail.com",
+            "homepage": "http://www.jiajiayoupin.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Funson86\\LaravelCrudGenerator\\": "src/"
+        }
+    }
+}
