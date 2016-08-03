@@ -22,7 +22,6 @@
         "php": ">=5.5.9",
         "illuminate/support": "~5.1"
     },
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Funson86\\LaravelCrudGenerator\\": "src/"
