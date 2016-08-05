@@ -1,0 +1,56 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * This is the model class for table "{{table}}".
+ * {{comment}}
+ */
+class DummyClass extends Model
+{
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = '{{table}}';
+
+    /**
+     * The primary key for the model.
+     *
+     * @var string
+     */
+    protected $primaryKey = '{{primaryKey}}';
+
+    {{timestamps}}
+
+    /**
+     * Attributes that should be mass-assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        {{fillable}}
+    ];
+
+
+    /**
+     * Returns the text label for the specified attribute or all attribute labels.
+     * @param string $key the attribute name
+     * @return array|string the attribute labels
+     */
+    public static function attributeLabels($key = null)
+    {
+        $data = [
+            {{attribute}}
+        ];
+
+        if ($key !== null) {
+            return isset($data[$key]) ? $data[$key] : null;
+        } else {
+            return $data;
+        }
+    }
+}
